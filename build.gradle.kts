@@ -11,7 +11,9 @@ repositories {
     mavenCentral()
 }
 
-
+dependencies {
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.21")
+}
 
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "15"
