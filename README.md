@@ -63,7 +63,7 @@ class MyController : Controller {
 val router = MyController().buildRouter<String>()
 
 router.handle(RouteInput("triangle", "down"))
-// prints a upside down triangle
+// prints an upside down triangle
 
 router.handle(RouteInput("square", ""))
 // prints a square
@@ -116,6 +116,8 @@ fun triangle(@IsUp isUp: Boolean) {
 ### Console input
 
 ```kotlin
+val router: Router<String> = ...
+
 var line = readLine()
 while (line != null && line != "exit") {
     val split = line.split(" ")
@@ -130,6 +132,8 @@ while (line != null && line != "exit") {
 ```
 
 ### Http server
+
+using the package com.sun.net.httpserver
 
 ```kotlin
 val router: Router<HttpExchange> = ...
