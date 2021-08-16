@@ -5,6 +5,23 @@ Kotlin Path Router
 A lightweight library that helps you connect route paths to a callback  
 Making it very easy to write an event driven application
 
+### Using Kouter with Maven
+```xml
+<dependency>
+  <groupId>com.github.saar25</groupId>
+  <artifactId>kouter</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+### Using Kouter with Gradle
+
+```kotlin
+dependencies {
+    implementation('com.github.saar25:kouter:1.0.0')
+}
+```
+
 ## Router
 
 The `Router<T>` class groups together multiple `RouteHandler`s  
